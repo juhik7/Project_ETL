@@ -1,3 +1,14 @@
+/*
+DDL scrite help to create table,
+script check table exist or not,
+Go help to execute next line
+
+
+*/
+if object_id('bronze.crm_cust_info', 'u') is not null
+	drop table bronze.crm_cust_info;
+GO
+    
 CREATE TABLE bronze.crm_cust_info (
     cst_id              INT,
     cst_key             NVARCHAR(50),
